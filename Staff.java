@@ -27,6 +27,6 @@ public class Staff extends Employee {
 
     @Override
     public String toString() {
-        return "Staff{" + "title = " + title + ", office = " + super.getOffice() + ", salary = $" + super.getSalary() + ", date hired = " + super.getDateHired() +'}';
+        return "Staff{" + "title = " + title + '}';
     }
 }
