@@ -16,21 +16,21 @@ import java.util.Date;
  *
  * @author Joshua
  */
-public class MyDate {
+public class MyDate extends Date {
 
     private int year;
     private int month;
     private int day;
-    private Date newDate;
+    private Date date;
     
     public MyDate()
     {      
-        newDate = new Date();
+        date = new Date();
     }
     
     public MyDate(long time)
     {
-        newDate = new Date(time);
+        date = new Date(time);
     }
     
     public MyDate(int year, int month, int day)
@@ -38,6 +38,11 @@ public class MyDate {
         this.year = year;
         this.month = month;
         this.day = day;
+    }
+    
+    public void setDate(long elapsedTime)
+    {
+        date.setTime(elapsedTime);
     }
 
     public int getYear() {

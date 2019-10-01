@@ -11,7 +11,6 @@
 */
 
 
-
 /**
  *
  * @author Joshua
@@ -21,8 +20,11 @@ public class Practice {
     public static void main(String[] args)
     {
         MyDate d1 = new MyDate();
-        MyDate d2 = new MyDate(561555550000L);
+        MyDate d2 = new MyDate(34355555133101L);
+        Staff s = new Staff();
         
-        
+        System.out.println(d1);
+        System.out.println(d2);
+        System.out.println(s.toString());
     }
 }
